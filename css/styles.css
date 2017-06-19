@@ -79,7 +79,7 @@ footer{
   color: white;
 }
 .frm{
-  text-align: center; 
+  text-align: center;
 }
 .flo{
   text-align: center;
@@ -101,7 +101,7 @@ footer{
 .mn{
   color:white;
   text-align: center;
-  font-size: 1.5em; 
+  font-size: 1.5em;
 }
 #loco{
   width: 2%;
@@ -111,7 +111,7 @@ footer{
   font-size: 1em;
 }
 
-=======
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -163,4 +163,3 @@ footer{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
->>>>>>> 7db425f6c67c7266898c6263e0cc1018a185ee73
