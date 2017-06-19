@@ -18,8 +18,22 @@ section#intro{
 section#events{
   background-color: green;
 }
-section#map{
+section#mapinfo{
   background-color: yellow;
+}
+section#mapinfo .row{
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+section#mapinfo .row .cols{
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+section#mapinfo .row #map{
+  height:100%;
+  width:100%;
 }
 footer{
   height:50%
