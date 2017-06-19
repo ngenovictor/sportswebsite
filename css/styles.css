@@ -7,6 +7,10 @@ html,body{
   margin: 0;
   padding:0;
   height:100%;
+  background: #C2FFFF ;
+}
+#main{
+  height: 100%;
 }
 section{
   /*All sections this can be overidden for each section*/
