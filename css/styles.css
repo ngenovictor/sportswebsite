@@ -1,0 +1,26 @@
+*{
+  /*To avoid horizontal scroll*/
+  max-width: 100%;
+}
+html,body{
+  /* remove padding and margin on body and give it total height*/
+  margin: 0;
+  padding:0;
+  height:100%;
+}
+section{
+  /*All sections this can be overidden for each section*/
+  height:75%;
+}
+section#intro{
+  background-color: red;
+}
+section#events{
+  background-color: green;
+}
+section#map{
+  background-color: yellow;
+}
+footer{
+  height:50%
+}

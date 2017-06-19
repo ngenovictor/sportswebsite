@@ -14,7 +14,7 @@ that is useful pertaining to:
 This will be done through creation of webpages. I propose the following pages:
 > 1. Home page
 > > * With daily weather update
-> > *
+> > * Footer (social, )
 > 2. Dietary guide page
 > 3. Routes and facility guide page.equipment and gear nguo
 > 4. Exercise routine guide for each type of sport.
