@@ -1,12 +1,14 @@
 *{
   /*To avoid horizontal scroll*/
   max-width: 100%;
+
 }
 html,body{
   /* remove padding and margin on body and give it total height*/
   margin: 0;
   padding:0;
   height:100%;
+  background: #C2FFFF;
 }
 
 #loader{
@@ -17,6 +19,8 @@ html,body{
   animation: move 2s infinite ;
   animation-direction: normal;
   animation-play-state: running;
+
+
 }
 
 #loader img{
@@ -52,13 +56,13 @@ html,body{
     opacity: 0;
   }
 
-  80%{
-    opacity: 0.5;
+  90%{
+    opacity: 0.2;
 
   }
 
   100%{
-  opacity: 1;
+  opacity: 0;
   }
 
 }
@@ -67,9 +71,13 @@ section{
   /*All sections this can be overidden for each section*/
 
   animation-name:appear;
-  height: 20em;
-  animation-duration: 3s;
+  height: 75%;
+  animation-duration: 4s;
 }
+section{
+  height: 30em;
+}
+
 section#intro{
   /*background-color: red;*/
 }
