@@ -17,28 +17,65 @@
 
 
   <nav>
-    #nav
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Training Video</a>
+  <a href="#">Dietetics</a>
+  <a href="#"></a>
+</div>
+
+<span onclick="openNav()" id="navimage"><img src="running-man-1399282_960_720.png" alt=""></span>
+
   </nav>
+
+
+  <div id="main">
+
 
 
   <section id="intro">
 
-    
+
   </section>
   <section id="events">
     #events
   </section>
-  <section id="map">
-    #map
+  <section id="mapinfo">
+    <div class="map-wrapper row">
+      <div class="col-xs-4 cols">
+        <div class="col-xs-6 mapinfo" id="routes">
+          Routes
+        </div>
+        <div class="col-xs-6 mapinfo" id="facilities">
+          Facilities
+        </div>
+        <div class="col-xs-12" id="mapresult">
+
+
+        </div>
+      </div>
+      <div class="col-xs-8 cols">
+        <div id="map">
+
+        </div>
+
+      </div>
+
+    </div>
   </section>
   <footer >
-    #footer
+
   </footer>
+  </div>
 
   <!-- JavaScripts file -->
   <script src="js/jquery-3.2.1.js" charset="utf-8"></script><!--jquery file-->
   <script src="js/bootstrap.js" charset="utf-8"></script><!--bootstrap js file-->
   <script src="js/leaflet.js" charset="utf-8"></script><!--mapping js file-->
+  <script src="js/data.js" charset="utf-8"></script>
+  <script src="js/map.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script><!--custom script file-->
 </body>
 </html>

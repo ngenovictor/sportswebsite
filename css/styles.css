@@ -8,7 +8,14 @@ html,body{
   margin: 0;
   padding:0;
   height:100%;
+<<<<<<< HEAD
   background: #C2FFFF;
+=======
+  background: #C2FFFF ;
+}
+#main{
+  height: 100%;
+>>>>>>> 7db425f6c67c7266898c6263e0cc1018a185ee73
 }
 
 #loader{
@@ -84,9 +91,93 @@ section#intro{
 section#events{
   background-color: green;
 }
-section#map{
-  background-color: yellow;
+section#mapinfo{
+  /*background-color: yellow;*/
+}
+section#mapinfo .row{
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+section#mapinfo .row .cols{
+  height:100%;
+  padding: 0;
+  margin: 0;
+}
+section#mapinfo .row .cols .mapinfo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:25%;
+  background-color: #0095CA;
+  border:1px solid #004960;
+  cursor: pointer;
+}
+#mapresult{
+  height:75%;
+  background-color: #C2FFFF;
+  display: none;
+}
+section#mapinfo .row #map{
+  height:100%;
+  width:100%;
+}
+section#mapinfo .row #map #popup{
+  color: yellow;
+  background-color: red;
+  opacity: 1;
 }
 footer{
   height:50%
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #004960; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    height: 100%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 50px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#navimage img{
+  height: 7em;
+  width: 7em;
+  padding: 2em 0em 0em 2em;
+  position: fixed;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
