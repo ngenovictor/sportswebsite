@@ -52,16 +52,16 @@ footer{
   text-align: center;
 }
 #cw{
-  width: 5%;
+  width: 3.5%;
 }
 #pm{
   width: 3.5%;
 }
 #gk{
-  width: 3%;
+  width: 3.5%;
 }
 .mn{
-  color:#000000;
+  color:white;
   text-align: center;
   font-size: 1.5em; 
 }
@@ -69,7 +69,7 @@ footer{
   width: 2%;
 }
 .sh{
-  color: #000000;
+  color: white;
   font-size: 1em;
 }
 
