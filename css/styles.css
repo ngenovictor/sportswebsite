@@ -19,7 +19,7 @@ section#events{
   background-color: green;
 }
 section#mapinfo{
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 section#mapinfo .row{
   height:100%;
@@ -31,9 +31,28 @@ section#mapinfo .row .cols{
   padding: 0;
   margin: 0;
 }
+section#mapinfo .row .cols .mapinfo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:25%;
+  background-color: #0095CA;
+  border:1px solid #004960;
+  cursor: pointer;
+}
+#mapresult{
+  height:75%;
+  background-color: #C2FFFF;
+  display: none;
+}
 section#mapinfo .row #map{
   height:100%;
   width:100%;
+}
+section#mapinfo .row #map #popup{
+  color: yellow;
+  background-color: red;
+  opacity: 1;
 }
 footer{
   height:50%
