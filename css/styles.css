@@ -8,14 +8,12 @@ html,body{
   margin: 0;
   padding:0;
   height:100%;
-<<<<<<< HEAD
-  background: #C2FFFF;
-=======
+
   background: #C2FFFF ;
 }
 #main{
   height: 100%;
->>>>>>> 7db425f6c67c7266898c6263e0cc1018a185ee73
+
 }
 
 #loader{
@@ -130,6 +128,55 @@ section#mapinfo .row #map #popup{
 footer{
   height:50%
 }
+#diva{
+  background-color:white;
+  height: 100%;
+}
+#moon{
+  width: 10%
+}
+.sha{
+  color: #000000;
+  text-align: center;
+  font-size: 3em;
+}
+.fw{
+  background-color: #000000;
+  color: white;
+}
+.frm{
+  text-align: center;
+}
+.flo{
+  text-align: center;
+}
+#star{
+  background-color: #004960;
+  height: 50%;
+  text-align: center;
+}
+#cw{
+  width: 3.5%;
+}
+#pm{
+  width: 3.5%;
+}
+#gk{
+  width: 3.5%;
+}
+.mn{
+  color:white;
+  text-align: center;
+  font-size: 1.5em;
+}
+#loco{
+  width: 2%;
+}
+.sh{
+  color: white;
+  font-size: 1em;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
