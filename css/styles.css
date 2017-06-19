@@ -25,8 +25,8 @@ footer{
   height:50%
 }
 #diva{
-  background-color:#C2FFFF;
-  height: 200%;
+  background-color:white;
+  height: 100%;
 }
 #moon{
   width: 10%
@@ -38,6 +38,7 @@ footer{
 }
 .fw{
   background-color: #000000;
+  color: white;
 }
 .frm{
   text-align: center; 
@@ -45,5 +46,30 @@ footer{
 .flo{
   text-align: center;
 }
-
+#star{
+  background-color: #004960;
+  height: 50%;
+  text-align: center;
+}
+#cw{
+  width: 5%;
+}
+#pm{
+  width: 3.5%;
+}
+#gk{
+  width: 3%;
+}
+.mn{
+  color:#000000;
+  text-align: center;
+  font-size: 1.5em; 
+}
+#loco{
+  width: 2%;
+}
+.sh{
+  color: #000000;
+  font-size: 1em;
+}
 
