@@ -30,7 +30,8 @@ $(document).ready(function(){
     $("section#mapinfo .row .cols #mapresult").text("");
     L.geoJson(routes,{
       onEachFeature: function(feature, layer){
-        $("section#mapinfo .row .cols #mapresult").append("<p>Route:"+feature.properties.Name+"</p>").click(function(){
+        $("section#mapinfo .row .cols #mapresult").append("<p>Route:"+feature.properties.Name+"</p>").click(function(event){
+          event.stopPropagation();
           map.fitBounds(layer.getBounds());
         })
       }
