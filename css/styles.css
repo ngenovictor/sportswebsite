@@ -17,7 +17,7 @@ html,body{
 }
 
 #loader{
-  position: absolute;
+  position: fixed;
   margin-top: 7em;
   z-index: 1;
   border-radius: 50%;
@@ -30,6 +30,7 @@ html,body{
 
 #loader img{
   width: 40em;
+
 }
 
 
