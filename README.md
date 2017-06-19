@@ -10,6 +10,7 @@ that is useful pertaining to:
 > 5. Training facilities
 > 6. Daily weather update
 > 7. Dietary information
+> 8. somethin
 
 This will be done through creation of webpages. I propose the following pages:
 > 1. Home page
