@@ -26,10 +26,24 @@ footer{
 }
 #diva{
   background-color:#C2FFFF;
-  height: 50%;
+  height: 200%;
 }
 #moon{
   width: 10%
+}
+.sha{
+  color: #000000;
+  text-align: center;
+  font-size: 3em;
+}
+.fw{
+  background-color: #000000;
+}
+.frm{
+  text-align: center; 
+}
+.flo{
+  text-align: center;
 }
 
 
