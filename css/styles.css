@@ -1,26 +1,64 @@
 *{
   /*To avoid horizontal scroll*/
-  max-width: 100%;
+  /*max-width: 100%;*/
 }
 html,body{
   /* remove padding and margin on body and give it total height*/
   margin: 0;
   padding:0;
-  height:100%;
+  height:400px;
 }
 section{
   /*All sections this can be overidden for each section*/
-  height:75%;
+  height:400px;
 }
 section#intro{
   background-color: red;
 }
-section#events{
-  background-color: green;
+
+/*=====EVENTS & WEATHER=====*/
+#events{
+	
 }
+.bg-1{
+	padding: 0;
+}
+.content{
+	padding: 5%;
+}
+
+/*--carousel----*/
+ .carousel-inner img {
+      width: 100%; 
+      margin: auto;
+  }
+.carousel-caption{
+	height: 40%;
+	background-color: #0095CA;
+	margin-left: 40%;
+	width: 35%;
+}
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+/*--End carousel----*/
+
+/*---weather----*/
+
+
+/*---End weather----*/
+
+/*=====END EVENTS & WEATHER=====*/
+
 section#map{
   background-color: yellow;
+	height: 500px;
 }
 footer{
-  height:50%
+  height:100px;
 }

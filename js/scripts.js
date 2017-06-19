@@ -1,3 +1,5 @@
-$(document).ready(function(){
-  
-});
+//====Events & weather update
+
+
+
+//====END Events & weather update
