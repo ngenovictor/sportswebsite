@@ -1,6 +1,7 @@
 *{
   /*To avoid horizontal scroll*/
   max-width: 100%;
+
 }
 html,body{
   /* remove padding and margin on body and give it total height*/
@@ -12,12 +13,76 @@ html,body{
 #main{
   height: 100%;
 }
+
+#loader{
+  position: absolute;
+  margin-top: 7em;
+  z-index: 1;
+  border-radius: 50%;
+  animation: move 2s infinite ;
+  animation-direction: normal;
+  animation-play-state: running;
+
+
+}
+
+#loader img{
+  width: 40em;
+}
+
+
+@-webkit-keyframes move {
+  0%{
+    transform: scale(1);
+    margin-left: 0%;
+  }
+
+  50%{
+    transform: scale(1.1);
+    margin-left: 20em;
+
+  }
+
+  100%{
+    transform: scale(1);
+    margin-left: 60em;
+    margin-right: 0;
+
+  }
+
+}
+
+
+
+@-webkit-keyframes appear {
+  0%{
+    opacity: 0;
+  }
+
+  90%{
+    opacity: 0.2;
+
+  }
+
+  100%{
+  opacity: 0;
+  }
+
+}
+
 section{
   /*All sections this can be overidden for each section*/
-  height:75%;
+
+  animation-name:appear;
+  height: 75%;
+  animation-duration: 4s;
 }
+section{
+  height: 30em;
+}
+
 section#intro{
-  background-color: red;
+  /*background-color: red;*/
 }
 section#events{
   background-color: green;
@@ -61,7 +126,6 @@ section#mapinfo .row #map #popup{
 footer{
   height:50%
 }
-<<<<<<< HEAD
 #diva{
   background-color:white;
   height: 100%;
@@ -111,7 +175,6 @@ footer{
   font-size: 1em;
 }
 
-=======
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -163,4 +226,3 @@ footer{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
->>>>>>> 7db425f6c67c7266898c6263e0cc1018a185ee73
