@@ -2,6 +2,9 @@
   background-color: white;
   height: auto;
 }
+#navimage img{
+  display: block;
+}
 body,html{
   background-color: white;
 }
