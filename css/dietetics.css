@@ -1,14 +1,14 @@
-#navimage img{
-  display: block;
-}
 #dietetics{
   background-color: white;
   height: auto;
 }
+#navimage img{
+  display: block;
+}
 body,html{
   background-color: white;
 }
-h2{
+#dietetics h2{
   text-align: center;
 }
 .pre-work img{
