@@ -1,0 +1,37 @@
+html,body{
+	background-color: #f0f5e7;
+}
+#navimage img{
+  display: block;
+}
+section#news{
+	height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	background-color: #ffffff;
+}
+hr{
+	width: 80%;
+	background-color: #ccc;
+	height: 1px;
+}
+#header{
+	padding: 30px;
+	font-size: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+.bg-1{
+	padding: 0;
+	float: left;
+}
+.content{
+	padding: 5%;
+	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+}
+#comment{
+	padding-top: 5px;
+}

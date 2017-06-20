@@ -82,10 +82,6 @@ html,body{
 }
 
 
-
-
-
-
 section{
   /*All sections this can be overidden for each section*/
 
@@ -303,7 +299,7 @@ footer{
     background-color: #004960;
   height: 100%;
 
-  
+
 }
 #diva h1{
   font-family: 'Gravitas One', cursive;;
