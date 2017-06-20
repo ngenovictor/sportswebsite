@@ -16,7 +16,7 @@ html,body{
 
 }
 
-#loader{
+/*#loader{
   position: fixed;
   margin-top: 20em;
   z-index: 1;
@@ -92,7 +92,7 @@ html,body{
   }
 
 }
-
+*/
 section{
   /*All sections this can be overidden for each section*/
 
