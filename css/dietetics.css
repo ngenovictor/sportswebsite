@@ -1,0 +1,29 @@
+#navimage img{
+  display: block;
+}
+#dietetics{
+  background-color: white;
+  height: auto;
+}
+body,html{
+  background-color: white;
+}
+h2{
+  text-align: center;
+}
+.pre-work img{
+  height: 150px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+@-webkit-keyframes move {
+
+  }
+  @-webkit-keyframes appear {
+
+  }
+  .post-work img{
+    height: 150px;
+    width: 250px;
+    margin-bottom: 20px;
+  }

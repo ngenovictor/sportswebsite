@@ -2,6 +2,8 @@
   /*To avoid horizontal scroll*/
   max-width: 100%;
 
+
+
 }
 html,body{
   /* remove padding and margin on body and give it total height*/
@@ -9,14 +11,18 @@ html,body{
   padding:0;
   height:100%;
 
-  background: #C2FFFF ;
+
 }
 #main{
-  height: 100%;
+  margin: 0;
+  padding:0;
+  height:100%;
+  background: #C2FFFF ;
+  display: none;
 
 }
 
-/*#loader{
+#loader{
   position: fixed;
   margin-top: 20em;
   z-index: 1;
@@ -76,23 +82,6 @@ html,body{
 }
 
 
-
-@-webkit-keyframes appear {
-  0%{
-    opacity: 0;
-  }
-
-  90%{
-    opacity: 0.2;
-
-  }
-
-  100%{
-  opacity: 0;
-  }
-
-}
-*/
 section{
   /*All sections this can be overidden for each section*/
 
@@ -100,15 +89,90 @@ section{
   height: 75%;
   animation-duration: 4s;
 }
+
+
 section{
-  height: 30em;
+
 }
 
 section#intro{
-  /*background-color: red;*/
+    max-height: auto;
+  animation: bg-change;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: normal;
+  margin-top: 0;
+  background-color: white;
+}
+section#intro h1 {
+  text-align: center;
+  /*font-family: 'Gravitas One', cursive;*/
+  font-size: 15em;
+ font-family: 'Quicksand', sans-serif;
+}
+section#intro h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10em;
+  text-align: center;
 }
 
+div.headerimg{
+  width: 40em;
+  margin-top: 5em;
+  margin-left: 10em;
+  padding-bottom: 7em;
+  animation-name: imgRotate;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
 
+@-webkit-keyframes imgRotate{
+  0%{
+    transform: rotateY(0deg);
+  }
+
+  25%{
+  transform: rotateY(90deg);
+
+  }
+
+  50%{
+  transform: rotateY(180deg);
+
+  }
+
+
+  75%{
+  transform: rotateY(270deg);
+
+  }
+
+  100%{
+  transform: rotateY(360deg);
+
+  }
+}
+
+@-webkit-keyframes bg-change{
+  0%{
+    color:#0095CA;
+  }
+
+  /*25%{
+  background-color:#004960;
+
+  }*/
+
+  50%{
+  color:#000000;
+
+  }
+
+  100%{
+  color:#004960;
+
+  }
+}
 /*=====EVENTS & WEATHER=====*/
 section#events{
 	background-color: white;
@@ -125,11 +189,12 @@ section#events div.container-fluid{
 section#events .row{
 	height:100%;
 	padding: 0;
-	margin: 0;
+	margin-right: 4em;
+  margin-left: 9em;
 }
 section#events div.container-fluid div.bg-1{
 	padding: 0;
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content{
 	height: 100%;
@@ -138,10 +203,10 @@ section#events div.container-fluid div.bg-1 .content{
 
 /*--carousel----*/
 section#events div.container-fluid div.bg-1 .content #myCarousel{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel div.carousel-inner{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel img{
 	min-width:100%;
@@ -159,6 +224,21 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   .carousel-caption h3 {
       color: #fff !important;
   }
+div.weather-banner{
+  height:100px;
+  background-color: #0095CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weather {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#weather img{
+  height:100px;
+}
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -180,7 +260,8 @@ section#mapinfo{
 section#mapinfo .row{
   height:100%;
   padding: 0;
-  margin: 0;
+  margin-right: 4em;
+  margin-left: 9em;
 }
 section#mapinfo .row .cols{
   height:100%;
@@ -211,13 +292,57 @@ section#mapinfo .row #map #popup{
   opacity: 1;
 }
 footer{
-  height:50%
+  height:50%;
+
 }
 #diva{
-  background-color:white;
+    background-color: #004960;
   height: 100%;
-  
+
+
 }
+#diva h1{
+  font-family: 'Gravitas One', cursive;;
+  text-align: center;
+  font-size: 5em;
+}
+
+#diva h2{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center ;
+  font-size: 3em;
+
+}
+
+#diva form{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+#diva .socialIcons img{
+  text-align: center;
+  padding-right: 3em;
+}
+
+#diva .socialIcons{
+  text-align: center;
+  padding-top: 1em;
+}
+
+#diva form button{
+  width: 8em;
+}
+#diva form input{
+  width: 30em;
+  border-radius: 5px;
+  height: 2.5em;
+}
+
+
+
+
 
 /* The side navigation menu */
 .sidenav {
@@ -262,11 +387,26 @@ footer{
   width: 7em;
   padding: 2em 0em 0em 2em;
   position: fixed;
+  z-index: 0.5;
+  display: none;
 }
 
+nav{
+  margin-top:  0;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .headerimg div{display: none;}
+}
+
+/*this for the arrow pointing down*/
+div.downarrow{
+  transform: rotateX(200deg);
+  margin-left: 15em;
+  margin-top: 7em;
+  width: 9em;
+  animation-iteration-count: infinite;
 }
