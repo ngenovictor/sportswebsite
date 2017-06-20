@@ -87,9 +87,73 @@ section{
 section#intro{
   /*background-color: red;*/
 }
+
+
+/*=====EVENTS & WEATHER=====*/
 section#events{
-  background-color: green;
+	background-color: white;
+	height: auto;
+	min-height	: 75%;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
+
+section#events div.container-fluid{
+	height:100%;
+	padding: 0;
+}
+section#events .row{
+	height:100%;
+	padding: 0;
+	margin: 0;
+}
+section#events div.container-fluid div.bg-1{
+	padding: 0;
+	height:100%;	
+}
+section#events div.container-fluid div.bg-1 .content{
+	height: 100%;
+/*	padding: 5%;*/
+}
+
+/*--carousel----*/
+section#events div.container-fluid div.bg-1 .content #myCarousel{
+	height:100%;	
+}
+section#events div.container-fluid div.bg-1 .content #myCarousel div.carousel-inner{
+	height:100%;	
+}
+section#events div.container-fluid div.bg-1 .content #myCarousel img{
+	min-width:100%;
+}
+ .carousel-inner img {
+/*      width: 100%; */
+/*      margin: auto;*/
+  }
+.carousel-caption{
+/*	height: 40%;*/
+	background-color: #0095CA;
+/*	margin-left: 40%;*/
+/*	width: 35%;*/
+}
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+/*--End carousel----*/
+
+/*---weather----*/
+
+
+/*---End weather----*/
+
+/*=====END EVENTS & WEATHER=====*/
+
+
 section#mapinfo{
   /*background-color: yellow;*/
 }
