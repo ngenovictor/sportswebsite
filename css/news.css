@@ -21,7 +21,7 @@ hr{
 	font-size: 40px;
 	text-align: center;
 	font-family: sans-serif;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 .bg-1{
 	padding: 0;
@@ -29,9 +29,12 @@ hr{
 }
 .content{
 	padding: 5%;
-	text-align: justify;
-	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
 }
 #comment{
 	padding-top: 5px;
+}
+.content h4{
+	font-size: 20px;
 }
