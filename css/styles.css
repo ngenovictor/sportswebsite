@@ -228,6 +228,21 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   .carousel-caption h3 {
       color: #fff !important;
   }
+div.weather-banner{
+  height:100px;
+  background-color: #0095CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weather {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#weather img{
+  height:100px;
+}
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -287,7 +302,8 @@ footer{
 #diva{
     background-color: #004960;
   height: 100%;
-  color: white;
+
+  
 }
 #diva h1{
   font-family: 'Gravitas One', cursive;;
@@ -327,6 +343,10 @@ footer{
   border-radius: 5px;
   height: 2.5em;
 }
+
+
+
+
 
 /* The side navigation menu */
 .sidenav {
