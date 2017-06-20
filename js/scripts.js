@@ -7,7 +7,22 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("main").style.display = "block";
+  document.getElementById("navimage1").style.display = "block";
 }
+
+
+
+
+
+
+$(document).ready(function(){
+
+
+
+});
+
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "300px";
@@ -38,14 +53,14 @@ function getWeatherData(locatedUser){
         "<h3>"+weekday[today.getDay()]+","+today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear()+"</h3>"+
         "<h3>"+data.weather[0].description+"</h3>"+
         "<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png' alt='weather-icon'></img>"+
-        "</div>")
+        "</div>");
 
     },
     error:function (err) {
       console.log(err);
     }
 
-  })
+  });
 }
 
 
@@ -65,4 +80,4 @@ var hater = {
   "sys":{"type":1,"id":6409,"message":0.0022,"country":"KE","sunrise":1497929576,"sunset":1497972952},
   "id":184745,
   "name":"Nairobi",
-  "cod":200}
+  "cod":200};

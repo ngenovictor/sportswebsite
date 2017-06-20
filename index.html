@@ -6,25 +6,32 @@
   <link rel="stylesheet" href="css/bootstrap.css"><!--bootstrap css-->
   <link rel="stylesheet" href="css/leaflet.css"><!--stylesheet for mapping-->
   <link rel="stylesheet" href="css/styles.css"><!--custom stylesheet-->
+
+
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+
+
+
 </head>
 <body onload="myFunction()">
+
   <div id="loader">
     <img src="logo.png" alt="">
   </div>
-
-
-
   <nav>
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Home</a>
+      <a href="index.html">Home</a>
       <a href="#">Training Video</a>
-      <a href="#">Dietetics</a>
+      <a href="dietetics.html">Dietetics</a>
       <a href="#"></a>
     </div>
 
-    <span onclick="openNav()" id="navimage"><img src="running-man-1399282_960_720.png" alt=""></span>
+    <span onclick="openNav()" id="navimage"><img src="running-man-1399282_960_720.png"  id="navimage1" alt=""></span>
 
   </nav>
 
@@ -34,14 +41,28 @@
 
   <div id="main">
 
-
-
     <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>SPORT</h1>
+            <h2>SWIFT</h2>
+
+          </div>
+          <div class="col-md-7">
+            <div class="headerimg">
+              <img src="logo.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
     </section>
 
     <section id="events">
+
 		<!--=====EVENTS & WEATHER=======--->
 		<div class="container-fluid">
 			<div class="row">
@@ -113,10 +134,14 @@
 				</div>
 			<!---weather---->
 				<div class="col-md-5" bg-1>
+
+
+
           <div class="weather-banner">
             <h2><strong>Current Weather Section</strong></h2>
           </div>
 					<div class="content" id="weather">
+
 
 					</div>
 				</div>
@@ -126,8 +151,16 @@
 
 
 
+
+
+
+
     </section>
+
 <!--==END EVENTS & WEATHER====-->
+
+
+
 
     <section id="mapinfo">
       <div class="map-wrapper row">
@@ -146,6 +179,7 @@
         <div class="col-md-8 cols">
           <div id="map">
 
+
           </div>
 
         </div>
@@ -154,15 +188,28 @@
     </section>
     <footer >
       <div class="container-fluid" id="diva">
-        <h2>Join Us</h2>
-        <form class="" action="index.html" method="post">
-          <div class="form-group form-inline">
-            <input type="email" name="" value="">
-            <button type="submit" name="button" class="btn btn-info">Join</button>
+
+        <h2>Join Our Train Well, Be Well</h2>
+        <h1>CULTURE</h1>
+        <form class="form" action="index.html" method="post">
+          <div class="form-group">
+            <input type="email" name="" value="" placeholder="example@email.com">
+            <button type="submit" name="button" class=" btn btn-info ">Join</button>
+
           </div>
 
         </form>
+        <div class="row">
+          <div class="container">
+            <div class="socialIcons">
+              <a href="#"><img src="png/png/facebook1.png" alt=""></a>
+              <a href="#"><img src="png/png/twitter1.png" alt=""></a>
+              <a href="#"><img src="png/png/instagram1.png" alt=""></a>
+            </div>
 
+          </div>
+
+        </div>
       </div>
     </footer>
   </div>
