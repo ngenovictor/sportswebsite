@@ -36,7 +36,11 @@
     -moz-columns: 300px 1; /* Firefox */
     background-color: white;
     columns: 100px 1;
-    height: 100%
+    height: 100%;
+    margin-left: 9em;
+}
+.col-md-3{
+  padding: 3px;
 }
 .clips{
   margin-left: 8em;
