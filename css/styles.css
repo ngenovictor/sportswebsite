@@ -129,7 +129,7 @@ section#events .row{
 }
 section#events div.container-fluid div.bg-1{
 	padding: 0;
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content{
 	height: 100%;
@@ -138,10 +138,10 @@ section#events div.container-fluid div.bg-1 .content{
 
 /*--carousel----*/
 section#events div.container-fluid div.bg-1 .content #myCarousel{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel div.carousel-inner{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel img{
 	min-width:100%;
@@ -216,7 +216,7 @@ footer{
 #diva{
   background-color:white;
   height: 100%;
-  
+
 }
 
 /* The side navigation menu */
