@@ -7,12 +7,16 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("main").style.display = "block";
+  document.getElementById("navimage1").style.display = "block";
 }
 
 
 
 
 $(document).ready(function(){
+  
+
 
 });
 function openNav() {
