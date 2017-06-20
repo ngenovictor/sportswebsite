@@ -299,18 +299,22 @@ footer{
     background-color: #004960;
   height: 100%;
 
+<<<<<<< HEAD
+=======
 
 }
 #diva h1{
   font-family: 'Gravitas One', cursive;;
   text-align: center;
   font-size: 5em;
+  color: white;
 }
 
 #diva h2{
   font-family: 'Quicksand', sans-serif;
   text-align: center ;
   font-size: 3em;
+  color: white;
 
 }
 
@@ -329,6 +333,7 @@ footer{
 #diva .socialIcons{
   text-align: center;
   padding-top: 1em;
+>>>>>>> 2064c80710ef94ccbcae370098725886bc0a2c80
 }
 
 #diva form button{
