@@ -18,10 +18,10 @@ html,body{
 
 #loader{
   position: fixed;
-  margin-top: 7em;
+  margin-top: 20em;
   z-index: 1;
   border-radius: 50%;
-  animation: move 2s infinite ;
+  animation: move 4s infinite ;
   animation-direction: normal;
   animation-play-state: running;
 
@@ -29,7 +29,7 @@ html,body{
 }
 
 #loader img{
-  width: 40em;
+  width: 10em;
 
 }
 
@@ -40,15 +40,35 @@ html,body{
     margin-left: 0%;
   }
 
+  20%{
+    transform: scale(1.1);
+    margin-left: 10em;
+}
+
   50%{
     transform: scale(1.1);
-    margin-left: 20em;
+    margin-left: 40em;
 
   }
 
+  60%{
+    transform: scale(1.1);
+    margin-left: 40em;
+  }
+
+  80%{
+    transform: scale(1.1);
+    margin-left: 50em;
+  }
+
+
+  90%{
+    transform: scale(1.1);
+    margin-left: 67em;
+}
   100%{
     transform: scale(1);
-    margin-left: 60em;
+    margin-left: 80em;
     margin-right: 0;
 
   }
@@ -196,50 +216,7 @@ footer{
 #diva{
   background-color:white;
   height: 100%;
-}
-#moon{
-  width: 10%
-}
-.sha{
-  color: #000000;
-  text-align: center;
-  font-size: 3em;
-}
-.fw{
-  background-color: #000000;
-  color: white;
-}
-.frm{
-  text-align: center;
-}
-.flo{
-  text-align: center;
-}
-#star{
-  background-color: #004960;
-  height: 50%;
-  text-align: center;
-}
-#cw{
-  width: 3.5%;
-}
-#pm{
-  width: 3.5%;
-}
-#gk{
-  width: 3.5%;
-}
-.mn{
-  color:white;
-  text-align: center;
-  font-size: 1.5em;
-}
-#loco{
-  width: 2%;
-}
-.sh{
-  color: white;
-  font-size: 1em;
+  
 }
 
 /* The side navigation menu */
