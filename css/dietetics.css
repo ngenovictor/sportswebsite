@@ -1,3 +1,6 @@
+#navimage img{
+  display: block;
+}
 #dietetics{
   background-color: white;
   height: auto;

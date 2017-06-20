@@ -1,6 +1,9 @@
 html,body{
 	background-color: #f0f5e7;
 }
+#navimage img{
+  display: block;
+}
 section#news{
 	height: auto;
 	margin-left: 10%;
