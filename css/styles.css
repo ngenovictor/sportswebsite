@@ -129,7 +129,7 @@ section#events .row{
 }
 section#events div.container-fluid div.bg-1{
 	padding: 0;
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content{
 	height: 100%;
@@ -138,10 +138,10 @@ section#events div.container-fluid div.bg-1 .content{
 
 /*--carousel----*/
 section#events div.container-fluid div.bg-1 .content #myCarousel{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel div.carousel-inner{
-	height:100%;	
+	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content #myCarousel img{
 	min-width:100%;
@@ -159,6 +159,21 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   .carousel-caption h3 {
       color: #fff !important;
   }
+div.weather-banner{
+  height:100px;
+  background-color: #0095CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weather {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#weather img{
+  height:100px;
+}
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -216,7 +231,7 @@ footer{
 #diva{
   background-color:white;
   height: 100%;
-  
+
 }
 
 /* The side navigation menu */
