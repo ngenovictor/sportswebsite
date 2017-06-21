@@ -18,24 +18,29 @@ html,body{
   padding:0;
   height:100%;
   background: #C2FFFF ;
-  display: none;
 
 }
 
 #loader{
   position: fixed;
-  margin-top: 20em;
-  z-index: 1;
-  border-radius: 50%;
-  animation: move 4s infinite ;
-  animation-direction: normal;
-  animation-play-state: running;
+  height:100%;
+  width: 100%;
+  background-color: white;
+  background-size: cover;
+
+  z-index: 10000;
+
 
 
 }
 
 #loader img{
   width: 10em;
+
+  margin-top: 20em;
+  animation: move 4s infinite ;
+  animation-direction: normal;
+  animation-play-state: running;
 
 }
 
@@ -226,7 +231,7 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   }
 div.weather-banner{
   height:100px;
-  background-color: #0095CA;
+  color: #004960;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,6 +296,22 @@ section#mapinfo .row #map #popup{
   background-color: red;
   opacity: 1;
 }
+@media only screen and (max-width: 993px) {
+    section#mapinfo {
+        height:800px;
+        margin-bottom: 20px;
+    }
+    section#mapinfo .row .cols{
+      height:50%;
+    }
+    section#mapinfo .row #map{
+      margin-right: -30px;
+    }
+}
+/* end map section*/
+
+
+
 footer{
   height:50%;
 
@@ -298,10 +319,6 @@ footer{
 #diva{
     background-color: #004960;
   height: 100%;
-
-<<<<<<< HEAD
-=======
-
 }
 #diva h1{
   font-family: 'Gravitas One', cursive;;
@@ -333,7 +350,6 @@ footer{
 #diva .socialIcons{
   text-align: center;
   padding-top: 1em;
->>>>>>> 2064c80710ef94ccbcae370098725886bc0a2c80
 }
 
 #diva form button{
