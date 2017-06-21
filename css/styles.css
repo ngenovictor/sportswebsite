@@ -17,7 +17,7 @@ html,body{
   margin: 0;
   padding:0;
   height:100%;
-  background: #C2FFFF ;
+
 
 }
 
@@ -29,8 +29,35 @@ html,body{
   background-size: cover;
 
   z-index: 10000;
+}
+
+#loader .loaderTrk{
+  background-color: #006F94;
+  height: 4px;
+  animation-name: track;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes track {
+  0%{
+    width: 100%;
+  }
+10%{
+  width: 80%;
+}
 
 
+90%{
+  width: 45%;
+}
+
+  100%{
+    width :0%;
+
+  }
 
 }
 
@@ -101,35 +128,54 @@ section{
 }
 
 section#intro{
-    max-height: auto;
+    max-height: 100%;
+    padding-top: 5em;
+    /*width: 100%;*/
+    margin-left: 5em;
   animation: bg-change;
   animation-iteration-count: infinite;
   animation-duration: 7s;
   animation-direction: normal;
   margin-top: 0;
   background-color: white;
+  margin-bottom: 20em;
+
+
 }
-section#intro h1 {
+#intro h1 {
   text-align: center;
   /*font-family: 'Gravitas One', cursive;*/
-  font-size: 15em;
+  font-size: 20em;
+  font-size: 15vw;
  font-family: 'Quicksand', sans-serif;
 }
-section#intro h2{
+
+
+#intro h2{
   font-family: 'Quicksand', sans-serif;
-  font-size: 10em;
+  font-size: 40px;
+  font-size: 10vw;
   text-align: center;
 }
+#intro p{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 
-div.headerimg{
-  width: 40em;
-  margin-top: 5em;
-  margin-left: 10em;
-  padding-bottom: 7em;
-  animation-name: imgRotate;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
+  font-size: 3vw;
+  font-size: 1.5em;
 }
+
+.headerimg{
+  width: 30vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+
+}
+
+
 
 @-webkit-keyframes imgRotate{
   0%{
@@ -181,29 +227,32 @@ div.headerimg{
 /*=====EVENTS & WEATHER=====*/
 section#events{
 	background-color: white;
-	height: auto;
-	min-height	: 75%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+  margin-left: 6em;
+	min-height	: 80%;
+	margin-top: 15px;
+
 }
 
 section#events div.container-fluid{
-	height:100%;
+	/*height:100%;*/
 	padding: 0;
+  height:40em;
 }
 section#events .row{
-	height:100%;
+
 	padding: 0;
-	margin-right: 4em;
-  margin-left: 9em;
+
+  max-width: 100%;
+  margin-left: 0em;
 }
 section#events div.container-fluid div.bg-1{
 	padding: 0;
+
 	height:100%;
 }
 section#events div.container-fluid div.bg-1 .content{
 	height: 100%;
-/*	padding: 5%;*/
+
 }
 
 /*--carousel----*/
@@ -235,12 +284,24 @@ div.weather-banner{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 0;
 }
 #weather {
 display: flex;
 align-items: center;
 justify-content: center;
+
 }
+div.content#weather{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+}
+
+
 #weather img{
   height:100px;
 }
@@ -249,6 +310,15 @@ justify-content: center;
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
   }
+
+.highlights{
+  color: #004960;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-bottom: 2.5em;
+}
 /*--End carousel----*/
 
 /*---weather----*/
@@ -260,13 +330,15 @@ justify-content: center;
 
 
 section#mapinfo{
-  /*background-color: yellow;*/
+  margin-top: 20em;
 }
 section#mapinfo .row{
   height:100%;
   padding: 0;
-  margin-right: 4em;
-  margin-left: 9em;
+  max-width: 90%;
+  margin-left: 7em;
+
+
 }
 section#mapinfo .row .cols{
   height:100%;
@@ -290,6 +362,7 @@ section#mapinfo .row .cols .mapinfo{
 section#mapinfo .row #map{
   height:100%;
   width:100%;
+  padding: 1em;
 }
 section#mapinfo .row #map #popup{
   color: yellow;
@@ -319,11 +392,13 @@ footer{
 #diva{
     background-color: #004960;
   height: 100%;
+    margin-top: 10em;
+    width: 100%;
 }
 #diva h1{
-  font-family: 'Gravitas One', cursive;;
+  font-family: 'Quicksand',cursive;;
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   color: white;
 }
 
@@ -362,6 +437,41 @@ footer{
 }
 
 
+/*media query for footer*/
+@media only screen and (max-width: 993px) {
+
+  footer{
+    padding-top:5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  #diva h1{
+    font-size: 40px;
+  }
+
+  #diva h2{
+    font-size: 30px;
+  }
+
+  #diva .socialIcons img{
+    padding-right: 0px;
+    width: 5em;
+
+
+  }
+  #diva .socialIcons{
+    margin-left: 5%;
+    align-content: center;
+    margin-top: 0em;
+    margin-bottom: 5em;
+  }
+
+  #diva form{
+    padding: 5%;
+  }
+}
 
 
 
@@ -405,11 +515,15 @@ footer{
 }
 #navimage img{
   height: 7em;
-  width: 7em;
-  padding: 2em 0em 0em 2em;
+  width: 5em;
+  padding: 2em 0em 0em 0em;
   position: fixed;
   z-index: 0.5;
   display: none;
+  animation-name: imgRotate;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  cursor: pointer;
 }
 
 nav{

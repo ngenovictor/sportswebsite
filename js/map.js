@@ -4,6 +4,10 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 {
     id: 'mapbox.light',
 }).addTo(map);
+var facilityLayer = L.geoJson(facilities).addTo(map);
+var routesLayer = L.geoJson(routes).addTo(map);
+
+console.log(map.fitBounds(facilityLayer.getBounds(),routesLayer.getBounds()));
 
 
 $(document).ready(function(){
@@ -11,19 +15,16 @@ $(document).ready(function(){
       var dataLayer = L.geoJson(data, {
           onEachFeature: function(feature, layer) {
               var popupText = "<div id='popup' >Name: " + feature.properties.Name
-                  + "<br>Type: " + feature.properties.Type+"</div>";
+                  +"<br>Type: " + feature.properties.Type+"</div>";
               layer.bindPopup(popupText);
 
             }
           });
       dataLayer.addTo(map);
-      console.log()
+      console.log();
   }
   addDataToMap(facilities, map);
 
-  var facilityLayer = L.geoJson(facilities).addTo(map);
-  var routesLayer = L.geoJson(routes).addTo(map);
-  map.fitBounds(facilityLayer.getBounds(),routesLayer.getBounds());
 
   $("section#mapinfo .row .cols .mapinfo#routes").click(function(){
     $("section#mapinfo .row .cols #mapresult").show();
@@ -33,8 +34,8 @@ $(document).ready(function(){
         $("section#mapinfo .row .cols #mapresult").append("<p>Route:"+feature.properties.Name+"</p>").click(function(event){
           event.stopPropagation();
           map.fitBounds(layer.getBounds());
-        })
+        });
       }
-    })
-  })
-})
+    });
+  });
+});
