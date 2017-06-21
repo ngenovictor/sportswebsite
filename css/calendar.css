@@ -1,42 +1,48 @@
 .header{
-	background-image: url("../images/photo.jpeg");
-	height: 500px;
+	background-color: white;
 }
 #navimage img{
   display: block;
 }
 h1{
-	color: white;
-	font-size: 3em;
-	margin-left: 7em;
+	color: #000000;
+	font-size: 5em;
+	margin-left: 3em;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center; 
+	padding-bottom: 15px;
+	color: #004960;
 }
 #topic{
-	color: white;
+	color: #000000;
 	font-size: 1.5em;
 	margin-left: 7em;
+	text-align: center;
+	padding-bottom: 10px;
 }
 #dates{
 margin-left: 7em;
 font-size: 2em;
-font-style: bold;
 }	
 #talk{
-	font-size: 2em;
+	font-size: 1em;
 	color: #000000;
-	font-style: italic;
 	padding-left: 5px;
+	padding: 10px;
 }
 .words{
-	border-style: solid;
-	border-width: 0.2px;
 	padding-left: 50px;
 	margin-left: 7em;
 	background-color: white;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 
 }
 .words:hover{
-border-left: 50px solid black;
+border-left: 50px solid #004960;
 }
 
 
@@ -46,10 +52,10 @@ p{
 }
 #time{
    color:#0095CA;
-   padding: 0;
+   padding: 10px;
 }
 body{
-	background-color: rgba(110,110,110,0.5);
+	background-color: #f0f5e7;
 }
 footer{
 	margin-top: 50px;
