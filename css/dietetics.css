@@ -1,6 +1,7 @@
 #dietetics{
-  background-color: white;
+  background-color: #f0f5e7;
   height: auto;
+  padding-bottom: 5em;
 }
 #navimage img{
   display: block;
@@ -10,11 +11,15 @@ body,html{
 }
 #dietetics h2{
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+
 }
 .pre-work img{
   height: 150px;
   width: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @-webkit-keyframes move {
 
@@ -26,4 +31,13 @@ body,html{
     height: 150px;
     width: 250px;
     margin-bottom: 20px;
+  }
+  .col-md-3{
+    background-color: white;
+  }
+  #soy{
+    padding-bottom: 4em;
+  }
+  #coco{
+    padding-bottom: 1em;
   }
