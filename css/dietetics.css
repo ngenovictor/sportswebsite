@@ -3,8 +3,14 @@
   height: auto;
   padding-bottom: 5em;
 }
+#dietetics h1{
+  text-align: center;
+}
+
 #navimage img{
   display: block;
+  padding-left: 0;
+  padding-right: 1em;
 }
 body,html{
   background-color: white;
@@ -20,6 +26,21 @@ body,html{
   height: 150px;
   width: 250px;
   margin-bottom: 30px;
+
+}
+.pre-work h1{
+  padding-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+.post-work h1{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  
+
 }
 @-webkit-keyframes move {
 
@@ -40,4 +61,10 @@ body,html{
   }
   #coco{
     padding-bottom: 1em;
+  }
+  #pumpkin{
+    padding-bottom: 2.5em;
+  }
+  #protein-shake{
+    padding-bottom: 2em;
   }
