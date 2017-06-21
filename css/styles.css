@@ -345,30 +345,79 @@ section#mapinfo .row .cols{
   padding: 0;
   margin: 0;
 }
+section#mapinfo .row .cols#info{
+  height: auto;
+  max-height: 100%;
+  overflow: scroll;
+}
 section#mapinfo .row .cols .mapinfo{
   display:flex;
   justify-content: center;
   align-items: center;
-  height:25%;
-  background-color: #0095CA;
+  height:50px;
+  color:#004960;
+  /*background-color:#C2FFFF;*/
   border:1px solid #004960;
   cursor: pointer;
 }
-#mapresult{
-  height:75%;
-  background-color: #C2FFFF;
+#routeresult{
+  max-height: 100%;
   display: none;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+
+}
+div#routeresult div.row{
+  padding: 0;
+  margin: 0;
+}
+div#facilityresult div.row{
+  padding: 0;
+  margin: 0;
+}
+#facilityresult{
+  max-height: 100%;
+  display: none;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 section#mapinfo .row #map{
   height:100%;
   width:100%;
   padding: 1em;
 }
-section#mapinfo .row #map #popup{
-  color: yellow;
-  background-color: red;
-  opacity: 1;
+
+section#mapinfo div#mapresult{
+  margin: 0;
+  padding: 0;
 }
+section#mapinfo .row .cols #mapresult .row{
+  margin: 0;
+  padding: 0px;
+}
+section#mapinfo .row .cols #mapresult .name{
+  padding-left: 0;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  overflow: hidden;
+}
+section#mapinfo .row .cols #routeresult .name{
+  padding-left: 10px;
+}
+section#mapinfo .row .cols #routeresult .row{
+  overflow: hidden;
+  height:auto;
+}
+section#mapinfo .attr p{
+  color:#006F94;
+  font-weight: bold;
+}
+section#mapinfo  .name p{
+  padding:3px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 993px) {
     section#mapinfo {
         height:800px;
