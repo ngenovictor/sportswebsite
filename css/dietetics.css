@@ -54,6 +54,7 @@ body,html{
   }
   .col-md-3{
     background-color: white;
+    box-shadow: 3px 3px 1px #888888;
   }
   #soy{
     padding-bottom: 4em;
