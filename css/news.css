@@ -17,11 +17,12 @@ hr{
 	height: 1px;
 }
 #header{
+	color: #004960;
 	padding: 30px;
 	font-size: 70px;
 	text-align: center;
 	font-family: sans-serif;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Quicksand', Open Sans;
 }
 .bg-1{
 	padding: 0;
@@ -42,4 +43,10 @@ hr{
 	.img-responsive{
 		width: 100%;
 	}
+	.content p{
+		font-size: 16px;
+	}
+	section#news{
+	margin: 0;
+}
 }
