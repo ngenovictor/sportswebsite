@@ -423,7 +423,7 @@ section #info{
 
 @media only screen and (max-width: 993px) {
     section#mapinfo {
-        height:100%;
+        height:120%;
         margin-top: 10%;
         margin-bottom: 10%;
 
@@ -461,7 +461,7 @@ footer{
 }
 #diva{
     background-color: #004960;
-  height: 100%;
+  height: 120%;
     /*margin-top: 10em;*/
     width: 100%;
 }
