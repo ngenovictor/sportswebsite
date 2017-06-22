@@ -36,25 +36,18 @@ html,body{
   animation-name: track;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: normal;
   animation-play-state: running;
 }
 
 @-webkit-keyframes track {
   0%{
-    width: 100%;
+    width: 0%;
   }
-10%{
-  width: 80%;
-}
 
-
-90%{
-  width: 45%;
-}
 
   100%{
-    width :0%;
+    width :100%;
 
   }
 
@@ -77,36 +70,11 @@ html,body{
     margin-left: 0%;
   }
 
-  20%{
-    transform: scale(1.1);
-    margin-left: 10em;
-}
 
-  50%{
-    transform: scale(1.1);
-    margin-left: 40em;
-
-  }
-
-  60%{
-    transform: scale(1.1);
-    margin-left: 40em;
-  }
-
-  80%{
-    transform: scale(1.1);
-    margin-left: 50em;
-  }
-
-
-  90%{
-    transform: scale(1.1);
-    margin-left: 67em;
-}
   100%{
     transform: scale(1);
-    margin-left: 80em;
-    margin-right: 0;
+    margin-left: 100%;
+
 
   }
 

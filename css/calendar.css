@@ -1,31 +1,54 @@
 .header{
 	background-color: white;
+	padding: 5% 10% 5% 10%;
+	margin-left: 5em;
+	color: #004960;
+	height: 35em;
+
+}
+
+.header h1{
+	font-size: 5em;
+
+	text-align: left;
+
+}
+
+#logo{
+	width: 40%;
+	padding-left: 5em;
+}
+
+.header p{
+	margin-left: 0;
+
+	text-align: left;
+
 }
 #navimage img{
   display: block;
 }
-h1{
-	color: #000000;
+.words .time .talk h1{
 	font-size: 5em;
 	margin-left: 3em;
 	font-family: 'Quicksand', sans-serif;
-	text-align: center; 
+	text-align: center;
 	padding-bottom: 15px;
 	color: #004960;
 }
-#topic{
+.topic{
 	color: #000000;
 	font-size: 1.5em;
 	margin-left: 7em;
 	text-align: center;
 	padding-bottom: 10px;
 }
-#dates{
+.dates{
 margin-left: 7em;
 font-size: 2em;
-}	
-#talk{
-	font-size: 1em;
+}
+.talk{
+	font-size: 2.5em;
 	color: #000000;
 	padding-left: 5px;
 	padding: 10px;
@@ -50,13 +73,110 @@ p{
 	font-size: 1.5em;
 	color:#0095CA;
 }
-#time{
+.time{
    color:#0095CA;
    padding: 10px;
 }
 body{
 	background-color: #f0f5e7;
 }
+
 footer{
-	margin-top: 50px;
+  height:50%;
+
+}
+#diva{
+    background-color: #004960;
+  height: 100%;
+    margin-top: 10em;
+    width: 100%;
+}
+#diva h1{
+  font-family: 'Quicksand',cursive;;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+}
+
+#diva h2{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center ;
+  font-size: 3em;
+  color: white;
+
+}
+
+#diva form{
+  margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+#diva .socialIcons img{
+  text-align: center;
+  padding-right: 3em;
+}
+
+#diva .socialIcons{
+  text-align: center;
+  padding-top: 1em;
+}
+
+#diva form button{
+  width: 8em;
+}
+#diva form input{
+  width: 30em;
+  border-radius: 5px;
+  height: 2.5em;
+}
+
+
+/*media query for footer*/
+@media only screen and (max-width: 993px) {
+
+  footer{
+    padding-top:5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+
+  }
+
+  #diva h1{
+    font-size: 20px;
+  }
+
+  #diva h2{
+    font-size: 15px;
+  }
+
+  #diva .socialIcons img{
+    padding-right: 0em;
+    width: 2em;
+    margin-top: 0px;
+
+  }
+  #diva .socialIcons{
+    margin-left: 5%;
+    align-content: center;
+    margin-top: 0em;
+
+  }
+
+  #diva form{
+    padding: 5%;
+  }
+
+  #diva form input{
+
+    height: 2em;
+  }
+
+  #diva form button{
+
+    height: 2em;
+  }
 }
