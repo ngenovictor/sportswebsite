@@ -37,6 +37,7 @@ $(document).ready(function(){
 
   $("section#mapinfo .row .cols .mapinfo#routes").click(function(){
     $("section#mapinfo .row .cols #routeresult").slideToggle();
+    $("section#mapinfo .row .cols #facilityresult").hide();
     $("section#mapinfo .row .cols #routeresult").text("");
     $("section#mapinfo .row .cols #routeresult").append("<div class='row'><div class='attr'></div><div class='name'></div></div>");
     L.geoJson(routes,{
@@ -46,12 +47,13 @@ $(document).ready(function(){
           $("section#mapinfo .row .cols #routeresult .attr").append("<p>Distance: "+feature.properties.Distance+" Kms</p>");
           map.fitBounds(layer.getBounds());
 
-        }))
+        }));
       }
-    })
-  })
+    });
+  });
   $("section#mapinfo .row .cols .mapinfo#facilities").click(function(){
     $("section#mapinfo .row .cols #facilityresult").slideToggle();
+    $("section#mapinfo .row .cols #routeresult").hide();
     $("section#mapinfo .row .cols #facilityresult").text("");
     $("section#mapinfo .row .cols #facilityresult").append("<div class='row'><div class='attr'></div><div class='name'></div></div>");
     L.geoJson(facilities,{

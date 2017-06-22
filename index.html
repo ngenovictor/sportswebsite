@@ -54,7 +54,7 @@
 
   <div id="main">
 
-    <section id="intro">
+    <section id="intro" >
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-12 col-xs-12">
@@ -77,14 +77,14 @@
 
     </section>
 
-    <section id="events">
+    <section id="events" class="wow fadeInLeft" data-wow-duration="1s">
 
 		<!--=====EVENTS & WEATHER=======--->
 		<div class="container-fluid">
 			<div class="row">
 			<!---events---->
 				<div class="col-md-8 col-sm-8 col-xs-12 bg-1">
-          <h2 class="weather-banner highlights"><strong>HIGHLIGHTS</strong></h2>
+          <h1 class="weather-banner highlights"><strong>Highlights</strong></h1>
 					<div class="content">
 					  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -155,7 +155,7 @@
 
 
           <div class="weather-banner">
-            <h2><strong>WEATHER UPDATES</strong></h2>
+            <h1><strong>Weather Updates</strong></h1>
           </div>
 					<div class="content" id="weather">
 
@@ -184,20 +184,23 @@
     <section id="mapinfo">
 
       <div class="map-wrapper row">
-        <div class="col-md-4 cols" id="info">
+        <div class="weather-banner">
+          <h1><strong>Training Routes & Facilities</strong></h1>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 cols" id="info">
           <div class="mapinfo" id="routes">
-            <p><strong>Training Routes</strong></p>
+            <p><strong>Routes</strong></p>
           </div>
           <div id="routeresult">
           </div>
 
           <div class="mapinfo" id="facilities">
-            <p><strong>Training Facilities</strong></p>
+            <p><strong>Facilities</strong></p>
           </div>
           <div id="facilityresult">
           </div>
         </div>
-        <div class="col-md-8 cols">
+        <div class="col-md-8 col-sm-6 col-xs-12 cols">
           <div id="map">
 
 
@@ -251,5 +254,9 @@
   <script src="js/data.js" charset="utf-8"></script>
   <script src="js/map.js" charset="utf-8"></script>
   <script src="js/scripts.js" charset="utf-8"></script><!--custom script file-->
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 </body>
 </html>
