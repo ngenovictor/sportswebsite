@@ -13,7 +13,9 @@
   padding-right: 1em;
 }
 body,html{
-  background-color: white;
+  /*background-color: white;*/
+  width: 100%;
+  height: 100%;
 }
 #dietetics h2{
   text-align: center;
@@ -101,4 +103,49 @@ footer{
 }
 #dietetics p{
   text-align: justify;
+}
+@media only screen and (max-width: 993px) {
+
+  footer{
+    padding-top:5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+
+  }
+
+  #diva h1{
+    font-size: 20px;
+  }
+
+  #diva h2{
+    font-size: 15px;
+  }
+
+  #diva .socialIcons img{
+    padding-right: 0em;
+    width: 2em;
+    margin-top: 0px;
+
+  }
+  #diva .socialIcons{
+    margin-left: 5%;
+    align-content: center;
+    margin-top: 0em;
+
+  }
+
+  #diva form{
+    padding: 5%;
+  }
+
+  #diva form input{
+
+    height: 2em;
+  }
+
+  #diva form button{
+
+    height: 2em;
+  }
 }
