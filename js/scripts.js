@@ -29,7 +29,7 @@ function closeNav() {
 
 function getWeatherData(locatedUser){
   $.ajax({
-    url:'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&APPID=2b27a0a40b563e713ff359067ffba1dd',
+    url:'https://api.openweathermap.org/data/2.5/weather?q=Nairobi&APPID=2b27a0a40b563e713ff359067ffba1dd',
     success:function(data){
       var today = new Date();
       var weekday = new Array(7);
