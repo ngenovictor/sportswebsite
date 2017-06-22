@@ -2,15 +2,13 @@
   /*To avoid horizontal scroll*/
   max-width: 100%;
 
-
-
 }
 html,body{
   /* remove padding and margin on body and give it total height*/
   margin: 0;
   padding:0;
   height:100%;
-
+  width: 98%;
 
 }
 #main{
@@ -131,7 +129,7 @@ section#intro{
     max-height: 100%;
     padding-top: 5em;
     /*width: 100%;*/
-    margin-left: 5em;
+    margin-left: 4.5em;
   animation: bg-change;
   animation-iteration-count: infinite;
   animation-duration: 7s;
@@ -227,7 +225,7 @@ section#intro{
 /*=====EVENTS & WEATHER=====*/
 section#events{
 	background-color: white;
-  margin-left: 6em;
+  margin-left: 5em;
 	min-height	: 80%;
 	margin-top: 15px;
 
@@ -271,7 +269,7 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   }
 .carousel-caption{
 /*	height: 40%;*/
-	background-color: #0095CA;
+	background-color: rgba(0, 149, 202, 0.8);
 /*	margin-left: 40%;*/
 /*	width: 35%;*/
 }
@@ -296,7 +294,7 @@ div.content#weather{
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 5em;
+  padding-top: 2em;
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
 }
@@ -336,7 +334,7 @@ section#mapinfo .row{
   height:100%;
   padding: 0;
   max-width: 90%;
-  margin-left: 7em;
+  margin-left: 5em;
 
 
 }
@@ -384,7 +382,7 @@ div#facilityresult div.row{
 }
 section#mapinfo .row #map{
   height:100%;
-  width:100%;
+  width:95%;
   padding: 1em;
 }
 
@@ -461,9 +459,10 @@ footer{
 
 #diva form{
   margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  text-align: center;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+
 }
 
 #diva .socialIcons img{
@@ -494,31 +493,42 @@ footer{
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+
   }
 
   #diva h1{
-    font-size: 40px;
+    font-size: 20px;
   }
 
   #diva h2{
-    font-size: 30px;
+    font-size: 15px;
   }
 
   #diva .socialIcons img{
-    padding-right: 0px;
-    width: 5em;
-
+    padding-right: 0em;
+    width: 2em;
+    margin-top: 0px;
 
   }
   #diva .socialIcons{
     margin-left: 5%;
     align-content: center;
     margin-top: 0em;
-    margin-bottom: 5em;
+
   }
 
   #diva form{
     padding: 5%;
+  }
+
+  #diva form input{
+
+    height: 2em;
+  }
+
+  #diva form button{
+
+    height: 2em;
   }
 }
 
