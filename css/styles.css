@@ -424,6 +424,8 @@ section #info{
 @media only screen and (max-width: 993px) {
     section#mapinfo {
         height:100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
 
     }
     section#mapinfo .row .cols{
@@ -433,8 +435,21 @@ section #info{
     section#mapinfo .row #map{
       margin-left: 15px;
     }
-
-
+    section.row{
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-bottom:
+    }
+  section#intro{
+    margin-bottom: 10%;
+  }
+  section#diva{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  #map{
+  padding-bottom: 0;
+  }
 }
 /* end map section*/
 
@@ -447,7 +462,7 @@ footer{
 #diva{
     background-color: #004960;
   height: 100%;
-    margin-top: 10em;
+    /*margin-top: 10em;*/
     width: 100%;
 }
 #diva h1{
@@ -497,7 +512,7 @@ footer{
 @media only screen and (max-width: 993px) {
 
   footer{
-    padding-top:5em;
+    /*padding-top:5em;*/
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
