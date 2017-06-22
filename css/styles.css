@@ -277,7 +277,7 @@ section#events div.container-fluid div.bg-1 .content #myCarousel img{
   }
 .carousel-caption{
 /*	height: 40%;*/
-	background-color: #0095CA;
+	background-color: rgba(0, 149, 202, 0.8);
 /*	margin-left: 40%;*/
 /*	width: 35%;*/
 }
