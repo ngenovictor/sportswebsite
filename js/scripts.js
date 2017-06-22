@@ -16,13 +16,6 @@ function showPage() {
 
 
 
-$(document).ready(function(){
-
-
-
-});
-
-
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "300px";
