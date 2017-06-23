@@ -1,4 +1,5 @@
 //USER LOGIC
+AOS.init();
 var myVar;
 
 function myFunction() {
@@ -60,6 +61,9 @@ function getWeatherData(locatedUser){
 $(document).ready(function(){
 
   getWeatherData();
+
+
+
 });
 var hater = {
   "coord":{"lon":36.82,"lat":-1.28},

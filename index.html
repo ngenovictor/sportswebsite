@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/bootstrap.css"><!--bootstrap css-->
   <link rel="stylesheet" href="css/leaflet.css"><!--stylesheet for mapping-->
   <link rel="stylesheet" href="css/styles.css"><!--custom stylesheet-->
-
+  <link rel="stylesheet" href="aos-master/dist/aos.css" />
 
 
 
@@ -58,7 +58,7 @@
 
   <div id="main">
 
-    <section id="intro" >
+    <section id="intro"  >
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-12 col-xs-12">
@@ -81,14 +81,14 @@
 
     </section>
 
-    <section id="events" class="wow fadeInLeft" data-wow-duration="1s">
+    <section id="events" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="400" data-aos-anchor-placement="top-center">
 
 		<!--=====EVENTS & WEATHER=======--->
 		<div class="container-fluid">
 			<div class="row">
 			<!---events---->
 				<div class="col-md-8 col-sm-8 col-xs-12 bg-1">
-          <h1 class="weather-banner highlights"><strong>Highlights</strong></h1>
+          <h1 class="weather-banner highlights">Highlights</h1>
 					<div class="content">
 					  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
@@ -162,7 +162,7 @@
 
 
           <div class="weather-banner">
-            <h1><strong>Weather Updates</strong></h1>
+            <h1>Weather Updates</h1>
           </div>
 					<div class="content" id="weather">
 
@@ -188,11 +188,11 @@
 
 
 
-    <section id="mapinfo">
+    <section id="mapinfo" data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="400" data-aos-anchor-placement="top-center">
 
       <div class="map-wrapper row">
         <div class="weather-banner">
-          <h1><strong>Training Routes & Facilities</strong></h1>
+          <h1>Training Routes & Facilities</h1>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 cols" id="info">
           <div class="mapinfo" id="routes">
@@ -260,10 +260,8 @@
   <script src="js/leaflet.js" charset="utf-8"></script><!--mapping js file-->
   <script src="js/data.js" charset="utf-8"></script>
   <script src="js/map.js" charset="utf-8"></script>
+  <script src="aos-master/dist/aos.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script><!--custom script file-->
-  <script src="js/wow.min.js"></script>
-  <script>
-  new WOW().init();
-  </script>
+
 </body>
 </html>

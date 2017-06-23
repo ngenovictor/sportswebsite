@@ -9,8 +9,9 @@ html,body{
   margin: 0;
   padding:0;
   height:100%;
-  width: 98%;
+  max-width: 96%;
   background-color: #f0f5e7;
+
 }
 #main{
   margin: 0;
@@ -99,7 +100,7 @@ section#intro{
     max-height: 100%;
     padding-top: 5em;
     padding-left: 5em;
-    /*width: 100%;*/
+    width: 100%;
     /*margin-left: 4.5em;*/
   animation: bg-change;
   animation-iteration-count: infinite;
@@ -259,6 +260,7 @@ div.weather-banner{
   align-items: center;
   justify-content: center;
   margin-left: 0;
+  text-align: center;
 }
 #weather {
 display: flex;
@@ -335,6 +337,7 @@ section#mapinfo .row .cols .mapinfo{
   align-items: center;
   height:50px;
   color:#004960;
+  text-align: center;
   /*background-color:#C2FFFF;*/
   /*border:1px solid #004960;*/
   cursor: pointer;
@@ -426,7 +429,7 @@ section #info{
         height:100%;
         margin-top: 10%;
         margin-bottom: 10%;
-
+        padding-bottom: 15%;
     }
     section#mapinfo .row .cols{
       height:50%;
@@ -449,6 +452,8 @@ section #info{
   }
   #map{
   padding-bottom: 0;
+  width: 100%;
+  height: 100%;
   }
 }
 /* end map section*/
@@ -457,25 +462,25 @@ section #info{
 
 footer{
   height:50%;
-
+  padding-top: 0px;
 }
 #diva{
     background-color: #004960;
   height: 100%;
-    /*margin-top: 10em;*/
+
     width: 100%;
 }
 #diva h1{
   font-family: 'Quicksand',cursive;;
   text-align: center;
-  font-size: 4em;
+  font-size: 40px;
   color: white;
 }
 
 #diva h2{
   font-family: 'Quicksand', sans-serif;
   text-align: center ;
-  font-size: 3em;
+  font-size: 30px;
   color: white;
 
 }
@@ -490,21 +495,22 @@ footer{
 
 #diva .socialIcons img{
   text-align: center;
-  padding-right: 3em;
+  padding-right: 10px;
+  width: 5%;
 }
 
 #diva .socialIcons{
   text-align: center;
-  padding-top: 1em;
+  padding-top: 10px;
 }
 
 #diva form button{
-  width: 8em;
+  width: 7%;
 }
 #diva form input{
-  width: 30em;
+  min-width: 40%;
   border-radius: 5px;
-  height: 2.5em;
+  height: 30px;
 }
 
 
@@ -520,16 +526,16 @@ footer{
   }
 
   #diva h1{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   #diva h2{
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #diva .socialIcons img{
     padding-right: 0em;
-    width: 2em;
+    width: 10%;
     margin-top: 0px;
 
   }
@@ -544,14 +550,14 @@ footer{
     padding: 5%;
   }
 
-  #diva form input{
-
-    height: 2em;
-  }
+  /*#diva form input{
+    width: 20%;
+    height: 20%;
+  }*/
 
   #diva form button{
-
-    height: 2em;
+    width: 20%;
+    height: 20%;
   }
 }
 
@@ -600,7 +606,7 @@ footer{
   width: 5em;
   padding: 2em 0em 0em 0em;
   position: fixed;
-  z-index: 0.5;
+  z-index: 1000;
   display: none;
   animation-name: imgRotate;
   animation-iteration-count: infinite;

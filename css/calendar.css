@@ -27,6 +27,7 @@
 }
 #navimage img{
   display: block;
+	z-index: 1000;
 }
 .words .time .talk h1{
 	font-size: 5em;

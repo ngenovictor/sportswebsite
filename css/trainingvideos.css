@@ -24,7 +24,7 @@ hr{
 	font-family: sans-serif;
 	font-family: 'Quicksand', Open Sans;
 }
-#header2{
+.header2{
 	color: #000000;
 	padding: 10px;
 	font-size: 20px;
@@ -51,7 +51,7 @@ hr{
 	font-family: 'Nunito', sans-serif;
 	background-color: #ffffff;
 }
-#comment{
+.comment{
 	padding: 3%;
 	font-size: 16px;
 	color: #000000;

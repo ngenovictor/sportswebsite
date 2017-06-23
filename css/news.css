@@ -3,6 +3,7 @@ html,body{
 }
 #navimage img{
   display: block;
+	z-index: 1000;
 }
 section#news{
 	height: auto;
@@ -36,7 +37,7 @@ hr{
 	background-color: #ffffff;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-#comment{
+.comment{
 	padding-top: 5px;
 }
 @media only screen and (max-width:991px){
@@ -47,5 +48,5 @@ hr{
 		font-size: 16px;
 	}
 	section#news{
-	
+
 }
