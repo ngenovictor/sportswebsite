@@ -44,7 +44,7 @@ function getWeatherData(locatedUser){
       $("div.content#weather").text("");
       $("div.content#weather").append("<div>"+
         "<h2>"+data.name+","+data.sys.country+"</h2>"+
-        "<h3>"+weekday[today.getDay()]+","+today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear()+"</h3>"+
+        "<h3>"+weekday[today.getDay()]+","+today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear()+"</h3>"+
         "<h3>"+data.weather[0].description+"</h3>"+
         "<img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png' alt='weather-icon'></img>"+
         "</div>");

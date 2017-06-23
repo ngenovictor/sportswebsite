@@ -60,10 +60,10 @@ $(document).ready(function(){
       onEachFeature: function(feature, layer){
         $("section#mapinfo .row .cols #facilityresult .name").append($("<div class='col-xs-5 bck'><p>"+feature.properties.Name+"</p></div>").click(function(){
           $("section#mapinfo .row .cols #facilityresult .name .bck").mouseenter(function(){
-            $(this).css({"background-color": "#0095CA"})
+            $(this).css({"text-decoration": "underline"})
           });
           $("section#mapinfo .row .cols #facilityresult .name .bck").mouseleave(function(){
-            $(this).css({"background-color": "white"})
+            $(this).css({"text-decoration": "none"})
           });
 
           $("section#mapinfo .row .cols #facilityresult .attr").text("");
